@@ -44,7 +44,7 @@ I tried testing and running this on WSL but to no avail. The module spits out so
 
 ## Improvements to be made
 
-* While the module has had times where it incorrectly categorizes the file, it is only as good as the input given. I have already thought of ways to improve, though I  hadn't the time to fully implement it.
+* ~~While the module has had times where it incorrectly categorizes the file, it is only as good as the input given. I have already thought of ways to improve, though I  hadn't the time to fully implement it.~~
 * User input would be a very neat addition, as in having the user, name the folders for themselves, based on what files they have present.
 * The large amounts of output that module and jaseci spits out can be cleaned up.
 * The codebase (especially bash) can use some cleaning up.
