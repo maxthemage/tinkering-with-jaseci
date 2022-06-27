@@ -5,6 +5,13 @@ The idea for sorting files was had because my Downloads folders became crowded. 
 
 ## Running the Script
 
+### Requirements
+
+Ensure jaseci and jaseci_kit are up to date
+```
+pip3 install jaseci jaseci_kit --upgrade
+```
+
 Some stock files have been included to test the functionality and effectiveness of the program.
 First you will need some dependencies (if they are not already installed). For parsing the json data that jaseci outputs:
 #### Dependencies
@@ -16,7 +23,7 @@ For the MacOS users
 brew install jshon jq
 ```
 
-or use your distros respective package manager to install.
+If you're running a different system, just use your distro's package manager to install.
 
 Next just cd into the directory and run the script (it will need executable permissions). Though you may want to look around first.  
 ```
@@ -41,9 +48,11 @@ The program consists of two main parts; a bash script and a jac program. The bas
 
 ## Shortcomings
 
-* Though the module seems to work very well, it can sometimes miscategorize the files! Although it is to be noted that it only has the file names to go off of.
+* Though the module seems to work very well, it can sometimes miscategorize the files! Although it should to be noted that, it only has the file names to go off of.
 * The user cannot directly name the folders based on their file types, so there isn't much specificity
 * This script has no depth, and will only sort files in the same directory it's in.
+* Takes a bit of a while to run, especially after updating jaseci
+* Running the script on an empty directory throws an error
 
 ### For WSL users!!
 I tried testing and running this on WSL but to no avail. The module spits out some weird error.
