@@ -16,7 +16,7 @@ or use your distros respective package manager to install.
 Next just cd into the directory and run the script (it will need executable permissions). Though you may want to look around first.  
 ```
 git clone https://github.com/maxthemage/jaseci-tinkerings.git
-cd jaseci-tinkerings/sort_files/ 
+cd tinkering-with-jaseci/sort_files/ 
 chmod + x sort_files.sh
 ./sort_file.sh
 ```
