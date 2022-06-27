@@ -18,7 +18,7 @@ Next just cd into the directory and run the script (it will need executable perm
 git clone https://github.com/maxthemage/tinkering-with-jaseci.git 
 cd tinkering-with-jaseci/sort_files/ 
 chmod +x sort_files.sh
-./sort_file.sh
+./sort_files.sh
 ```
 
 The script will take some time to run, especially the first time, since to has to load the jaseci_kit module and the jac program. It will also spit out the feed from loading the module, since I have not gotten around to cleaning that up as yet.
