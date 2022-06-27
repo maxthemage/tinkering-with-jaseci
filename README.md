@@ -11,6 +11,11 @@ First you will need some dependencies (if they are not already installed). For p
 ```
 sudo apt install jshon jq
 ```
+For the MacOS users 
+```
+brew install jshon jq
+```
+
 or use your distros respective package manager to install.
 
 Next just cd into the directory and run the script (it will need executable permissions). Though you may want to look around first.  
@@ -38,9 +43,10 @@ The program consists of two main parts; a bash script and a jac program. The bas
 
 * Though the module seems to work very well, it can sometimes miscategorize the files! Although it is to be noted that it only has the file names to go off of.
 * The user cannot directly name the folders based on their file types, so there isn't much specificity
+* This script has no depth, and will only sort files in the same directory it's in.
 
 ### For WSL users!!
-I tried testing and running this on WSL but to no avail. The module spits out some weird error. Will try to resolve asap.
+I tried testing and running this on WSL but to no avail. The module spits out some weird error.
 
 ## Improvements to be made
 
@@ -48,6 +54,7 @@ I tried testing and running this on WSL but to no avail. The module spits out so
 * User input would be a very neat addition, as in having the user, name the folders for themselves, based on what files they have present.
 * The large amounts of output that module and jaseci spits out can be cleaned up.
 * The codebase (especially bash) can use some cleaning up.
+* Eliminate the use of the few texts used to output data. Rely more on JSON files.
 
 ### Comments
 I worked on this in most of the free time I had, but ultimately time was against me and was the biggest shortcoming of this project. I hope to complete it fully, with the original idea that was had.
