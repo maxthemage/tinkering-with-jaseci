@@ -17,7 +17,7 @@ Next just cd into the directory and run the script (it will need executable perm
 ```
 git clone https://github.com/maxthemage/tinkering-with-jaseci.git 
 cd tinkering-with-jaseci/sort_files/ 
-chmod + x sort_files.sh
+chmod +x sort_files.sh
 ./sort_file.sh
 ```
 
@@ -26,6 +26,13 @@ The script will take some time to run, especially the first time, since to has t
 ## Overview of the Program 
 
 The program consists of two main parts; a bash script and a jac program. The bash script serves to not only parse the output from the jac program, but to run it, as well as do the actual sorting, as in moving files around to their respective directories. The script start begins by declaring a hardcoded list of folders to sort the files into. It outputs that data along with a list of the files in the directory, for the jac program to read. It then loads up the "jaseci_kit.use_qa" module, saving the session, to the default session file. The jac program the executes to the the bulk of the logic needed to place the files into the given folders. It does this by associating the folder names, to each of the sortable files in it's directory. It does a json dump of the files and their most appropriate directory, and Walla! Bash moves them around.
+
+#### Screenshot of folder before running script
+![alt text](https://github.com/maxthemage/tinkering-with-jaseci/blob/master/before_sort.png)
+
+#### Screenshot of folder after running script
+![alt text](https://github.com/maxthemage/tinkering-with-jaseci/blob/master/after_sort.png)
+
 
 ## Shortcomings
 
